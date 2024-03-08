@@ -15,7 +15,7 @@ for ( var i =0; i<emojis.length; i++){
                if(document.querySelectorAll('.boxOpen')[0].innerHTML == document.querySelectorAll('.boxOpen')[1].innerHTML){
                    document.querySelectorAll('.boxOpen')[0].classList.add('boxMatch')
                    document.querySelectorAll('.boxOpen')[1].classList.add('boxMatch')
-
+                   
                    document.querySelectorAll('.boxOpen')[1].classList.remove('boxOpen')
                    document.querySelectorAll('.boxOpen')[0].classList.remove('boxOpen')
 
@@ -23,6 +23,9 @@ for ( var i =0; i<emojis.length; i++){
                        alert('YOU WON')
                    }
                } else {
+                //add some shake animations in the our style.css to the cards when clicked and unmatched
+                  document.querySelectorAll('.boxOpen')[0].classList.add('shake');
+                  document.querySelectorAll('.boxOpen')[1].classList.add('shake');
                    document.querySelectorAll('.boxOpen')[1].classList.remove('boxOpen')
                    document.querySelectorAll('.boxOpen')[0].classList.remove('boxOpen')
                }
@@ -62,15 +65,15 @@ function moveCard() {
   moveCount = moveCount + 1;
   moves.innerHTML = `<span>Moves:</span>${moveCount}`;
 }
-
-function gameOver() {
-  if (minutesValue.innerText == "01" && secondsValue.innerText == "00") {
-    controlCont.classList.remove("hidden")
-    gameCont.classList.add("hidden")
-    result.innerHTML = "GAME OVER"
-    clearInterval(interval);
-  }
-}
+//finish game conditions... Yet to work on it
+// function gameOver() {
+//   if (minutesValue.innerText == "01" && secondsValue.innerText == "00") {
+//     controlCont.classList.remove("hidden")
+//     gameCont.classList.add("hidden")
+//     result.innerHTML = "GAME OVER"
+//     clearInterval(interval);
+//   }
+// }
 
 function startGame() {
   //movesCount = 0;
