@@ -28,9 +28,13 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 430px;
+    height: 430px;
+    color: white;
 }
 .hidden {
-    display: none;
+    display: none !important;
+    visibility: hidden;
 }
 
 
@@ -58,11 +62,16 @@ h2{
     background: #267c65;
 }
 
-#time, #moves-count {
+#time, #moves-count, #result {
     color: white;
 }
+#result {
+    font-size: 2rem;
+}
+h1 {
+    font-size: 6rem;
+}
 .game{
-    position: relative;
     width: 430px;
     height: 430px;
     display: flex;
@@ -71,6 +80,7 @@ h2{
     transform-style: preserve-3d;
     perspective: 500px;
 }
+
 .shake {
     animation: shake 0.6s ease-in-out;
 }
