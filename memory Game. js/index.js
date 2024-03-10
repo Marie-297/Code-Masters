@@ -5,6 +5,7 @@ let resetBtn = document.querySelector(".Reset")
 let startBtn = document.querySelector(".startbutton")
 const gameCont = document.querySelector(".game")
 const result = document.querySelector("#result")
+const resultTime = document.querySelector("#resulttime")
 
 const emojis = ['🍕','🍕','😍','😍','😈','😈','🥶','🥶','🤑','🤑','👾','👾','❤','❤','👽','👽'];
 var shuf_emojis = emojis.sort(() => (Math.random() > .5) ? 2 : -1);
@@ -51,7 +52,7 @@ function playGame() {
 let seconds = 0;
 let minutes = 0;
 //For timer
-const timeGenerator = () => {
+let timeGenerator = () => {
   seconds += 1;
   //minutes condition
   if (seconds >= 60) {
@@ -71,19 +72,24 @@ function moveCard() {
   moveCount = moveCount + 1;
   moves.innerHTML = `<span>Moves:</span>${moveCount}`;
 }
-// when all cards are matched it opens a page that tells you YOU WIN and the number of moves you made to complete the game
+// when all cards are matched it opens a page that tells you YOU WIN and the number of moves you made and time used to complete the game
 function gameOver() {
   gameCont.classList.add("hidden")
   controlCont.classList.remove("hidden")
   resetBtn.classList.add("hidden");
   startBtn.classList.add("hidden");
   moves.classList.add("hidden");
-  result.innerHTML = `<h4>Moves:${moveCount}</h4>`
+  timeValue.classList.add("hidden");
   clearInterval(interval);
+  result.innerHTML = `<h4>Moves:${moveCount}</h4>`
+  resultTime.innerHTML = timeValue.innerHTML
+  
 }
 
+
+
 function startGame() {
-  //movesCount = 0;
+  moveCount = 0;
   seconds = 0;
   minutes = 0;
   //play the game

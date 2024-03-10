@@ -45,7 +45,7 @@ h2{
    letter-spacing: 0.1em;
 }
 
-.Reset, .startbutton{
+.Reset, .startbutton, .replaybutton{
     padding: 15px 20px;
     color: #267c65;
     background: #ffff;
@@ -56,6 +56,11 @@ h2{
     font-weight: 600;
     cursor: pointer;
 }
+.secondheader {
+    display: flex;
+    flex-direction: row !important;
+    column-gap: 50px;
+}
 
 .Reset:focus, .startbutton:focus{
     color: #fff;
@@ -65,11 +70,14 @@ h2{
 #time, #moves-count, #result {
     color: white;
 }
-#result {
+#result, #resulttime {
     font-size: 2rem;
 }
 h1 {
     font-size: 6rem;
+}
+.replaybutton {
+  margin-top: 50px;
 }
 .game{
     width: 430px;

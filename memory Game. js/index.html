@@ -11,19 +11,24 @@
     <div class="container">
         <!-- header  -->
         <h2>Emojis Memory Game</h2>
-        <div id="moves-count"></div>
-        <div id="time"></div>
+        <div class="secondheader">
+          <button class="button startbutton" onclick="startGame()";>Start Game</button>
+          <div class="displays">
+            <div id="moves-count"></div>
+            <div id="time"></div>
+          </div>
+        </div>
         <!-- game div  -->
         <div class="game"></div>
         <!-- reset button  -->
         <button class="Reset" onclick="window.location.reload()";>Reset Game</button>
         <!--A start button to start playing the game-->
-        <button class="button startbutton" onclick="startGame()";>Start Game</button>
         <div class="controls-container hidden">
           <h1>YOU WON!!!</h1>
           <div id="result"></div>
+          <div id="resulttime"></div>
           <!-- <button class="button startbutton" onclick="playAgain()";>Play Again</button> -->
-          <button class="button startbutton" onclick="BacktoGame()";>Back to Game</button>
+          <button class="button replaybutton" onclick="BacktoGame()";>Back to Game</button>
         </div>
     </div>
 
