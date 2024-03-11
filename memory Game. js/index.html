@@ -13,8 +13,13 @@
         <h2>Emojis Memory Game</h2>
         <div class="secondheader">
           <button class="button startbutton" onclick="startGame()";>Start Game</button>
+          <button class="button pausebutton hidden" onclick="pauseGame()";>Pause Game</button>
+          <button class="button resumebutton hidden" onclick="resumeGame()";>Resume Game</button>
           <div class="displays">
             <div id="moves-count"></div>
+            <div id="wrongmoves-count"></div>
+          </div>
+          <div class="display2">
             <div id="time"></div>
           </div>
         </div>
@@ -26,7 +31,7 @@
         <div class="controls-container hidden">
           <h1>YOU WON!!!</h1>
           <div id="result"></div>
-          <div id="resulttime"></div>
+          <h4 id="resulttime"></h4>
           <!-- <button class="button startbutton" onclick="playAgain()";>Play Again</button> -->
           <button class="button replaybutton" onclick="BacktoGame()";>Back to Game</button>
         </div>

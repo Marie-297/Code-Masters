@@ -28,10 +28,12 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: start;
     width: 430px;
     height: 430px;
     color: white;
 }
+
 .hidden {
     display: none !important;
     visibility: hidden;
@@ -45,7 +47,7 @@ h2{
    letter-spacing: 0.1em;
 }
 
-.Reset, .startbutton, .replaybutton{
+.Reset, .startbutton, .replaybutton, .pausebutton, .resumebutton{
     padding: 15px 20px;
     color: #267c65;
     background: #ffff;
@@ -56,10 +58,15 @@ h2{
     font-weight: 600;
     cursor: pointer;
 }
+.disabled {
+    pointer-events: none;
+}
 .secondheader {
+    width: 430px;
     display: flex;
-    flex-direction: row !important;
-    column-gap: 50px;
+    flex-direction: row;
+    justify-content: space-between !important;
+    
 }
 
 .Reset:focus, .startbutton:focus{
@@ -67,14 +74,21 @@ h2{
     background: #267c65;
 }
 
-#time, #moves-count, #result {
+#time, #moves-count, #result, #wrongmoves-count {
     color: white;
+    text-align: center !important;
 }
 #result, #resulttime {
     font-size: 2rem;
 }
 h1 {
     font-size: 6rem;
+    animation: blink 3s infinite;
+}
+@keyframes blink {
+    50% {
+        opacity: 0.1;
+    }
 }
 .replaybutton {
   margin-top: 50px;
