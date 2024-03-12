@@ -10,21 +10,27 @@
       <!-- Main container  -->
     <div class="container">
         <!-- header  -->
-        <h2>Emojis Memory Game</h2>
+        <h2>Emojis Memory Game</h2><br>
         <div class="secondheader">
           <button class="button startbutton strtbtn" onclick="startGame()";>Start Game</button>
+
           <button class="button pausebutton hidden pausebtn" onclick="pauseGame()";>Pause Game</button>
           <button class="button resumebutton hidden" onclick="resumeGame()";>Resume Game</button>
           <div class="displays">
+
             <div id="moves-count"></div>
             <div id="wrongmoves-count"></div>
           </div>
           <div class="display2">
             <div id="time"></div>
+            
           </div>
         </div>
+        
         <!-- game div  -->
-        <div class="game"></div>
+        <div class="game">
+          <!-- <img class="mempic" src="./memory pic.png"  alt=""> -->
+        </div>
         <!-- reset button  -->
         <button class="Reset" onclick="window.location.reload()";>Reset Game</button>
         <!--A start button to start playing the game-->

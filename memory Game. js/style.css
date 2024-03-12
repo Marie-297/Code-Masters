@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: monospace;
+    
+}
+@font-face{
+    font-family: 'heading font';
+    src: url(./font/ProtestGuerrilla-Regular.ttf);
 }
 
 
@@ -44,7 +49,7 @@ body{
 
 h2{
    font-size: 3.5em;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+   font-family: 'heading font';
    font-weight:bold;
    text-transform: uppercase;
    letter-spacing: 0.1em;
@@ -52,7 +57,7 @@ h2{
 
 .Reset, .startbutton, .replaybutton, .pausebutton, .resumebutton{
     padding: 15px 20px;
-    color: rgb(15, 1, 1);
+    color:white;
     background: transparent;
     background-color: #930489;
     border-style: ridge;
@@ -63,6 +68,7 @@ h2{
     text-transform: uppercase;
     font-weight: 700px;
     cursor: pointer;
+    
 }
 .disabled {
     pointer-events: none;
@@ -74,6 +80,12 @@ h2{
     justify-content: space-between !important;
     
     
+}
+
+.mempic{
+   height: 270px; 
+   width: 350px;
+   margin-top: 40px;
 }
 
 /* .strtbtn{
