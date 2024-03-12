@@ -16,7 +16,7 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: rgb(229, 140, 222);
+  background:#0a3c2f;
 }
 
 .container{
@@ -25,7 +25,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background: linear-gradient(325deg,#d469e3 20%,#730373c0 ,#ea18b22e);
+    background: #0d614b;
     padding: 40px 60px;
     border-style: solid;
     border-color: white;
@@ -49,7 +49,7 @@ body{
 
 h2{
    font-size: 3.5em;
-   font-family: 'heading font';
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
    font-weight:bold;
    text-transform: uppercase;
    letter-spacing: 0.1em;
@@ -180,7 +180,7 @@ h1 {
     content: '';
     position: absolute;
     inset: 0;
-    background: wheat;
+    background:#209d70;
     transition: 0.25s;
     transform: rotate(0deg);
     backface-visibility: hidden;
@@ -188,4 +188,28 @@ h1 {
 
 .boxOpen:after,.boxMatch:after{
     transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 450px) {
+    .game {
+        width: 90%;
+    }
+    .container, .controls-container {
+        padding: 20px;
+        width: 100%;
+    }
+    .items {
+        width: 80px;
+        height: 70px;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .Reset, .startbutton, .replaybutton, .pausebutton, .resumebutton {
+        font-size: 1.2em;
+        padding: 15px 12px;
+    }
+    h1 {
+        font-size: 4rem;
+    }
 }
