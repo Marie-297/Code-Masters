@@ -177,3 +177,27 @@ h1 {
 .boxOpen:after,.boxMatch:after{
     transform: rotateY(180deg);
 }
+
+@media screen and (max-width: 450px) {
+    .game {
+        width: 90%;
+    }
+    .container, .controls-container {
+        padding: 20px;
+        width: 100%;
+    }
+    .items {
+        width: 80px;
+        height: 70px;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .Reset, .startbutton, .replaybutton, .pausebutton, .resumebutton {
+        font-size: 1.2em;
+        padding: 15px 12px;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+}

@@ -11,7 +11,9 @@ const gameCont = document.querySelector(".game")
 const result = document.querySelector("#result")
 const resultTime = document.querySelector("#resulttime")
 
-let game = (JSON.parse(localStorage.getItem('')))
+// const emojistwo = ['🍕','🍕','😍','😍','😈','😈','🥶','🥶','🤑','🤑','👾','👾','❤','❤','👽','👽','😭','😭','🐶','🐶','🐹', '🐹','🦝','🦝',];
+// var shuf_emojistwo = emojistwo.sort(() => (Math.random() > .5) ? 2 : -1);
+
 // added more emojis to the game
 const emojis = ['🍕','🍕','😍','😍','😈','😈','🥶','🥶','🤑','🤑','👾','👾','❤','❤','👽','👽'];
 var shuf_emojis = emojis.sort(() => (Math.random() > .5) ? 2 : -1);
@@ -117,11 +119,6 @@ function startGame() {
   interval = setInterval(timeGenerator, 1000);
   //gameOver();
 }
-//yet to work on it
-// function playAgain() {
-//   location.reload();
-//   window.onload = playGame();
-// }
 
 // refreshes the page and takes you back to starting the game
 function BacktoGame() {
