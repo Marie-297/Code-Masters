@@ -11,7 +11,7 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background:#4b3d8f;
+  background:#0a3c2f;
 }
 
 .container{
@@ -20,8 +20,10 @@ body{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background:#64395f;
+    background: #0d614b;
     padding: 40px 60px;
+    border-style: solid;
+    border-color: white;
 }
 .controls-container {
     display: flex;
@@ -41,21 +43,25 @@ body{
 
 
 h2{
-   font-size: 3em;
-   color: #fff;
+   font-size: 3.5em;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+   font-weight bold;
    text-transform: uppercase;
    letter-spacing: 0.1em;
 }
 
 .Reset, .startbutton, .replaybutton, .pausebutton, .resumebutton{
     padding: 15px 20px;
-    color: #267c65;
-    background: #ffff;
-    border: none;
-    font-size: 1.5em;
+    color: rgb(15, 1, 1);
+    background: transparent;
+    background-color: #930489;
+    border-style: ridge;
+    border-radius: 15px;
+    font-size: 1.6em;
+    font-weight: bold;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700px;
     cursor: pointer;
 }
 .disabled {
@@ -67,7 +73,21 @@ h2{
     flex-direction: row;
     justify-content: space-between !important;
     
+    
 }
+
+/* .strtbtn{
+   margin-left: 30%;
+    background-color: rgba(255, 255, 255, 0.608);
+    color: black;
+    border-radius: 10%;
+} */
+
+/* .pausebtn{
+    background-color: rgba(255, 255, 255, 0.608);
+    color: black;
+    border-radius: 10%;
+} */
 
 .Reset:focus, .startbutton:focus{
     color: #fff;
@@ -148,7 +168,7 @@ h1 {
     content: '';
     position: absolute;
     inset: 0;
-    background:#b7b1d2;
+    background:#209d70;
     transition: 0.25s;
     transform: rotate(0deg);
     backface-visibility: hidden;
