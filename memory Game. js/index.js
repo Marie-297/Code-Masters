@@ -12,7 +12,7 @@ const result = document.querySelector("#result")
 const resultTime = document.querySelector("#resulttime")
 
 let game = (JSON.parse(localStorage.getItem('')))
-
+// added more emojis to the game
 const emojis = ['🍕','🍕','😍','😍','😈','😈','🥶','🥶','🤑','🤑','👾','👾','❤','❤','👽','👽'];
 var shuf_emojis = emojis.sort(() => (Math.random() > .5) ? 2 : -1);
 //I created a function to play the game so I have put everything in a function to run it only when you start the game.

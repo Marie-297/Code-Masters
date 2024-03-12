@@ -11,7 +11,7 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #0a3c2f;
+  background:#4b3d8f;
 }
 
 .container{
@@ -20,7 +20,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background: #0d614b;
+    background:#64395f;
     padding: 40px 60px;
 }
 .controls-container {
@@ -148,7 +148,7 @@ h1 {
     content: '';
     position: absolute;
     inset: 0;
-    background: #209d70;
+    background:#b7b1d2;
     transition: 0.25s;
     transform: rotate(0deg);
     backface-visibility: hidden;
