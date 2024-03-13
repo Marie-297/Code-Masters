@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Emoji Memory Game</title>
+    <link rel="stylesheet" href="gametwo.css">
+</head>
+<body>
+      <!-- Main container  -->
+    <div class="container">
+        <!-- header  -->
+        <h2>Emojis Memory Game</h2>
+        <h3>Level Two</h3>
+        <div class="secondheader">
+          <button class="button startbutton strtbtn" onclick="startGame()";>Start Game</button>
+          <button class="button pausebutton hidden pausebtn" onclick="pauseGame()";>Pause Game</button>
+          <button class="button resumebutton hidden" onclick="resumeGame()";>Resume Game</button>
+          <div class="displays">
+
+            <div id="moves-count"></div>
+            <div id="wrongmoves-count"></div>
+          </div>
+          <div class="display2">
+            <div id="time"></div>
+            
+          </div>
+        </div>
+        
+        <!-- game div  -->
+        <div class="game">
+          <!-- <img class="mempic" src="./memory pic.png"  alt=""> -->
+        </div>
+        <div class="btns">
+           <!-- reset button  -->
+          <button class="Reset" onclick="window.location.reload()";>Reset Game</button>
+           <!-- A link with a button to take you back to level one -->
+          <a href="index.html" class="linkbtn"><button class="button">Back to Level One</button></a>
+        </div>
+        <!--A start button to start playing the second game-->
+        <div class="controls-container hidden">
+          <h1>YOU WON!!!</h1>
+          <div id="result"></div>
+          <h4 id="resulttime"></h4>
+          <div class="btns">
+            <!-- A button to replay leveltwo again -->
+            <button class="button restart" onclick="BacktoGame()";>Replay</button>
+            <!-- A link with a button to take you back to level one -->
+            <a href="index.html"><button class="button">Go back</button></a>
+          </div>
+        </div>
+    </div>
+
+    <!-- javascript for emojis-->
+    <script src="gametwo.js"></script>
+</body>
+
+</html>

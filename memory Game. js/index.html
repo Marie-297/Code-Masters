@@ -10,7 +10,8 @@
       <!-- Main container  -->
     <div class="container">
         <!-- header  -->
-        <h2>Emojis Memory Game</h2><br>
+        <h2>Emojis Memory Game</h2>
+        <h3>Level One</h3>
         <div class="secondheader">
           <button class="button startbutton strtbtn" onclick="startGame()";>Start Game</button>
           <button class="button pausebutton hidden pausebtn" onclick="pauseGame()";>Pause Game</button>
@@ -38,7 +39,10 @@
           <div id="result"></div>
           <h4 id="resulttime"></h4>
           <!-- <button class="button startbutton" onclick="playAgain()";>Play Again</button> -->
-          <button class="button replaybutton" onclick="BacktoGame()";>Back to Game</button>
+          <div class="btns">
+            <button class="button replaybutton" onclick="BacktoGame()";>Replay</button>
+            <a href="gametwo.html"><button class="button">Next Level</button></a>
+          </div>
         </div>
     </div>
 

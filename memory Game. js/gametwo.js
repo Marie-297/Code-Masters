@@ -8,12 +8,12 @@ let startBtn = document.querySelector(".startbutton")
 let pauseBtn = document.querySelector(".pausebutton")
 let resumeBtn = document.querySelector(".resumebutton")
 const gameCont = document.querySelector(".game")
-const gameCont2 = document.querySelector(".game2")
+const linkBtn = document.querySelector(".linkbtn")
 const result = document.querySelector("#result")
 const resultTime = document.querySelector("#resulttime")
 
-// added more emojis to the game
-const emojis = ['🍕','🍕','😍','😍','😈','😈','🥶','🥶','🤑','🤑','👾','👾','❤','❤','👽','👽'];
+// added more emojis to the game for level two
+const emojis = ['🍕','🍕','😍','😍','😈','😈','🥶','🥶','🤑','🤑','👾','👾','❤','❤','👽','👽','😭','😭','🐶','🐶','🐹', '🐹','🦝','🦝',];
 var shuf_emojis = emojis.sort(() => (Math.random() > .5) ? 2 : -1);
 //I created a function to play the game so I have put everything in a function to run it only when you start the game.
 function playGame() {
@@ -88,6 +88,7 @@ function wrongMoveCard() {
 // when all cards are matched it opens a page that tells you YOU WIN and the number of moves you made and time used to complete the game
 function gameOver() {
   gameCont.classList.add("hidden")
+  linkBtn.classList.add("hidden")
   controlCont.classList.remove("hidden")
   resetBtn.classList.add("hidden");
   pauseBtn.classList.add("hidden");
@@ -111,7 +112,6 @@ function startGame() {
   moveCount = 0;
   seconds = 0;
   minutes = 0;
-  //viewCards();
   //play the game
   playGame();
   //Start timer
@@ -139,7 +139,3 @@ function resumeGame() {
   gameCont.classList.remove("disabled");
   interval = setInterval(timeGenerator, 1000);
 }
-// function viewCards() {
-//   let openCards = document.querySelectorAll(".boxOpen")
-//   setInterval(openCards.classList.add("boxMatch"),3000) 
-// }
