@@ -60,13 +60,14 @@ h2{
  font-weight:bold;
  text-transform: uppercase;
  letter-spacing: 0.1em;
+ text-align: center;
 }
 .btns {
   display: flex;
   align-items: center;
-    justify-content: center;
-    column-gap: 20px;
-    margin-top: 50px;
+  justify-content: center;
+  column-gap: 20px;
+  margin-top: 50px;
 }
 
 .Reset, .startbutton, .replaybutton, .pausebutton, .resumebutton, .button{
@@ -102,19 +103,6 @@ h2{
  margin-top: 40px;
 }
 
-/* .strtbtn{
- margin-left: 30%;
-  background-color: rgba(255, 255, 255, 0.608);
-  color: black;
-  border-radius: 10%;
-} */
-
-/* .pausebtn{
-  background-color: rgba(255, 255, 255, 0.608);
-  color: black;
-  border-radius: 10%;
-} */
-
 .Reset:focus, .startbutton:focus, .button:focus{
   color: #fff;
   background: #267c65;
@@ -139,15 +127,7 @@ h1 {
 .replaybutton {
 margin-top: 50px;
 }
-/* .game{
-  width: 430px;
-  height: 430px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  transform-style: preserve-3d;
-  perspective: 500px;
-} */
+
 .game{
   width: 650px;
   height: 430px;
@@ -216,23 +196,138 @@ margin-top: 50px;
 @media screen and (max-width: 450px) {
   .game {
       width: 90%;
+      gap: 8px;
+      height: 400px;
+  }
+  .h3 {
+      font-size: 0.8em;
+  }
+  .secondheader {
+      width: 90%;
+      flex-direction: column;
   }
   .container, .controls-container {
       padding: 20px;
       width: 100%;
   }
   .items {
-      width: 80px;
+      width: 22%;
       height: 70px;
   }
   h2 {
-      font-size: 2em;
+      font-size: 1.5em;
+  }
+  h1 {
+      font-size: 1em;
+      text-align: center;
+  }
+  .Reset, .startbutton, .replaybutton, .pausebutton, .resumebutton, .button, .nextbutton {
+      font-size: 1em;
+      padding: 15px 12px !important;
+  }
+  h1 {
+      font-size: 4rem;
+  }
+  a {
+      font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 650px) {
+  .game {
+      width: 90%;
+      gap: 10px;
+      height: 400px;
+  }
+  .secondheader {
+      width: 90%;
+  }
+  h2 {
+      font-size: 1.6em;
+  }
+  h1 {
+      font-size: 3.5em;
+      text-align: center;
+  }
+  a {
+    font-size: 0.8em;
+}
+  .container, .controls-container {
+      padding: 20px;
+      width: 100%;
+  }
+  .items {
+      width: 22%;
+      height: 70px;
   }
   .Reset, .startbutton, .replaybutton, .pausebutton, .resumebutton {
       font-size: 1.2em;
       padding: 15px 12px;
   }
-  h1 {
-      font-size: 4rem;
+}
+@media screen and (min-width: 651px) and (max-width: 800px) {
+  .game {
+      width: 90%;
+      gap: 5px;
+      height: 300px;
   }
+  .secondheader {
+      width: 90%;
+  }
+  h2 {
+      font-size: 1.8em;
+  }
+  h1 {
+      font-size: 3.5em;
+      text-align: center;
+  }
+  a {
+    font-size: 0.8em;
+}
+  .container, .controls-container {
+      padding: 20px;
+      width: 100%;
+  }
+  .items {
+      width: 15%;
+      height: 70px;
+  }
+  .Reset, .startbutton, .replaybutton, .pausebutton, .resumebutton {
+      font-size: 1.2em;
+      padding: 15px 12px;
+  }
+
+}
+@media screen and (min-width: 801px) and (max-width: 870px) {
+  .game {
+      width: 90%;
+      gap: 5px;
+      height: 300px;
+  }
+  .secondheader {
+      width: 90%;
+  }
+  h2 {
+      font-size: 2.4em;
+  }
+  h1 {
+      font-size: 4.5em;
+      text-align: center;
+  }
+  a {
+    font-size: 0.8em;
+}
+  .container, .controls-container {
+      padding: 20px;
+      width: 100%;
+  }
+  .items {
+      width: 15%;
+      height: 70px;
+  }
+  .Reset, .startbutton, .replaybutton, .pausebutton, .resumebutton {
+      font-size: 1.2em;
+      padding: 15px 12px;
+  }
+
 }

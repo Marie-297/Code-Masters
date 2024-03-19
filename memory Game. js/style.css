@@ -54,6 +54,7 @@ h2{
    font-weight:bold;
    text-transform: uppercase;
    letter-spacing: 0.1em;
+   text-align: center;
 }
 h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -205,23 +206,70 @@ h1 {
 @media screen and (max-width: 450px) {
     .game {
         width: 90%;
+        gap: 8px;
+        height: 300px;
+    }
+    .h3 {
+        font-size: 1.4em;
+    }
+    .secondheader {
+        width: 90%;
+        flex-direction: column;
     }
     .container, .controls-container {
         padding: 20px;
         width: 100%;
     }
     .items {
-        width: 80px;
+        width: 22%;
         height: 70px;
     }
     h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
-    .Reset, .startbutton, .replaybutton, .pausebutton, .resumebutton {
+    h1 {
+        font-size: 1em;
+        text-align: center;
+    }
+    .Reset, .startbutton, .replaybutton, .pausebutton, .resumebutton, .button, .nextbutton {
         font-size: 1.2em;
-        padding: 15px 12px;
+        padding: 15px 12px !important;
     }
     h1 {
         font-size: 4rem;
     }
+    a {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 800px) {
+    .game {
+        width: 90%;
+        gap: 10px;
+        height: 300px;
+    }
+    .secondheader {
+        width: 90%;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    h1 {
+        font-size: 3.5em;
+        text-align: center;
+    }
+    .container, .controls-container {
+        padding: 20px;
+        width: 100%;
+    }
+    .items {
+        width: 22%;
+        height: 70px;
+    }
+    .Reset, .startbutton, .replaybutton, .pausebutton, .resumebutton {
+        font-size: 1.5em;
+        padding: 15px 12px;
+    }
+    
 }
