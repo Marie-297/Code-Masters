@@ -1,16 +1,16 @@
 //naming variables
-const moves = document.querySelector("#moves-count")
-const wrongMoves = document.querySelector("#wrongmoves-count")
-const timeValue = document.querySelector("#time")
-const controlCont = document.querySelector(".controls-container")
-let resetBtn = document.querySelector(".Reset")
-let startBtn = document.querySelector(".startbutton")
-let pauseBtn = document.querySelector(".pausebutton")
-let resumeBtn = document.querySelector(".resumebutton")
-const gameCont = document.querySelector(".game")
-const gameCont2 = document.querySelector(".game2")
-const result = document.querySelector("#result")
-const resultTime = document.querySelector("#resulttime")
+const moves = document.querySelector("#moves-count");
+const wrongMoves = document.querySelector("#wrongmoves-count");
+const timeValue = document.querySelector("#time");
+const controlCont = document.querySelector(".controls-container");
+let resetBtn = document.querySelector(".Reset");
+let startBtn = document.querySelector(".startbutton");
+let pauseBtn = document.querySelector(".pausebutton");
+let resumeBtn = document.querySelector(".resumebutton");
+const gameCont = document.querySelector(".game");
+const gameCont2 = document.querySelector(".game2");
+const result = document.querySelector("#result");
+const resultTime = document.querySelector("#resulttime");
 
 // added more emojis to the game
 const emojis = ['🍕','🍕','😍','😍','😈','😈','🥶','🥶','🤑','🤑','👾','👾','❤','❤','👽','👽'];
@@ -21,7 +21,6 @@ function playGame() {
     let box = document.createElement('div')
     box.className ='items';
     box.innerHTML = shuf_emojis[i]
- 
     //    game funtion js 
     box.onclick = function(){
         moveCard()
@@ -103,6 +102,7 @@ function gameOver() {
   resultTime.innerHTML = timeValue.innerHTML
   
 }
+
 // A function tp start playing the game when the startButton is clicked.
 function startGame() {
   startBtn.classList.add("hidden");
@@ -111,7 +111,6 @@ function startGame() {
   moveCount = 0;
   seconds = 0;
   minutes = 0;
-  //viewCards();
   //play the game
   playGame();
   //Start timer
